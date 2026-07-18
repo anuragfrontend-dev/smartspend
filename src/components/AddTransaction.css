@@ -1,0 +1,121 @@
+.box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  color: #f8fafc;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.box h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.transaction-form{
+  display: grid;
+  grid-template-columns: 2fr 100px 100px 60px;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/*
+.transaction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}*/
+
+.transaction-Input,
+.amount-Input,
+.transaction-selector {
+  padding: 10px 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-size: 0.75rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.transaction-Input:focus,
+.amount-Input:focus,
+.transaction-selector:focus {
+  border: 1px solid #3b82f6;
+}
+
+.add-button {
+  padding: 10px;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-button:hover {
+  background: #2563eb;
+}
+
+
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.transaction-list::-webkit-scrollbar{
+  display: none;
+}
+
+.transaction-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 40px;
+  gap: 10px;
+  align-items: center;
+  background: #0f172a;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border-left: 8px solid;
+  font-size: 0.9rem;
+}
+
+.transaction-item[data-type='income']{
+  border-left-color: #22c55e;
+}
+
+.transaction-item[data-type='expense']{
+  border-left-color: #ef4444;
+}
+
+.transaction-item button {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+
+
+.transaction-item button:hover {
+  background: #dc2626;
+}
+
+.transaction-amount[data-type='income']{
+  color: #22c55e;
+}
+
+.transaction-amount[data-type='expense']{
+  color: #ef4444;
+}
