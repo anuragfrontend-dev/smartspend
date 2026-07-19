@@ -17,8 +17,8 @@ export function ExpenseChart({totalIncome,totalExpense,savings}){
   const getChartSize=()=>{
     const width=window.innerWidth;
     if(width<500) return {radius:70,fontSize:10,length:5}
-    if(width<950) return {radius:80,fontSize:11,length:5}
-    return {radius:90,fontSize:16,length:10}
+    if(width<950) return {radius:75,fontSize:11,length:5}
+    return {radius:80,fontSize:16,length:10}
   }
   const chartSize=getChartSize();
   
