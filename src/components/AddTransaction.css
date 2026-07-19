@@ -14,7 +14,7 @@
 
 .transaction-form{
   display: grid;
-  grid-template-columns: 2fr 100px 100px 60px;
+  grid-template-columns: 2fr 1fr 1fr 60px;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -120,7 +120,7 @@
   color: #ef4444;
 }
 
-@media (max-width:570px){
+@media (max-width:600px){
   .transaction-form {
   display: flex;
   flex-direction: column;
