@@ -1,16 +1,25 @@
-# React + Vite
+# Expense Tracker 💰
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern expense tracker to manage your Income, Expense and Savings.  
+Built with React + Recharts. Clean UI, responsive and data saved in browser.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
+[ https://anuragfrontend-dev.github.io/expense-tracker/]( https://anuragfrontend-dev.github.io/expense-tracker/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- **Track Transactions** - Add Income and Expense in 1 click
+- **Live Dashboard** - Total Income, Total Expense, Total Savings cards
+- **Visual Chart** - Pie chart shows Expense vs Savings % 
+- **Responsive Design** - Works on Mobile, Tablet and Desktop
+- **Local Storage** - Your data stays safe in browser
+- **Dark Theme UI** - Easy on eyes with color coding
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
+- **Frontend**: React, Vite, CSS3
+- **Charts**: Recharts
+- **Storage**: Browser LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+![ExpenseTracker Dashboard](./public/Screenshot.png)

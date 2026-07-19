@@ -22,7 +22,6 @@ function App() {
  useEffect(()=>{
   localStorage.setItem('transactions',JSON.stringify(transactions));
  },[transactions])
-  console.log(totalExpense,totalIncome,savings);
   return (
     <div className="container">
 
