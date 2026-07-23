@@ -25,7 +25,12 @@ export function ExpenseChart({totalIncome,totalExpense,savings}){
   return(
     <div className="box">
       <h1>Expense Chart</h1>
-      <ResponsiveContainer width='100%' height={250}> 
+      {transactions.length===0? (
+        <p style={{textAlign:'center',color:'#d8d3d3', fontSize:'18px'}}>
+          No transactions yet.
+        </p>
+      ):(
+        <ResponsiveContainer width='100%' height={250}> 
           <PieChart>
             <Pie
              data={transactions}
@@ -51,6 +56,7 @@ export function ExpenseChart({totalIncome,totalExpense,savings}){
             <Legend />
           </PieChart>
       </ResponsiveContainer>
+      )}
     </div>
   )
 }
